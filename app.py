@@ -23,7 +23,7 @@ df = pd.read_csv(file_path, delimiter="\t", header=None)
 
 # Handle possible extra column
 if df.shape[1] > 8:
-    df = df.iloc[:, :8]
+    df = df.iloc[:, 1:]
 
 df.columns = SENSOR_COLUMNS
 
